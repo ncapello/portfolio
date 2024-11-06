@@ -1,19 +1,18 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-    firstName: 'Selene',
-    lastName:  'Yu',
+    firstName: 'Nicolas',
+    lastName:  'Capello',
     get name() {
         return `${this.firstName} ${this.lastName}`;
     },
-    role:      'Design Engineer',
+    role:      'Product Designer & Engineer',
     avatar:    '/images/avatar.jpg',
-    location:  'Asia/Jakarta',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-    languages: ['English', 'Bahasa']  // optional: Leave the array empty if you don't want to display languages
+    languages: []  // optional: Leave the array empty if you don't want to display languages
 }
 
 const newsletter = {
-    display: true,
+    display: false,
     title: <>Subscribe to {person.firstName}'s Newsletter</>,
     description: <>I occasionally write about design, technology, and share thoughts on the intersection of creativity and engineering.</>
 }
@@ -47,8 +46,8 @@ const home = {
     label: 'Home',
     title: `${person.name}'s Portfolio`,
     description: `Portfolio website showcasing my work as a ${person.role}`,
-    headline: <>Design engineer and builder</>,
-    subline: <>I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive<br/> user experiences. After hours, I build my own projects.</>
+    headline: <>Product Design & Engineer</>,
+    subline: <>I'm Nicolas, a <InlineCode>designer, coder, and human</InlineCode> with an affinity<br/> for building products with simplicity, accesibility and ease-of-use in mind.</>
 }
 
 const about = {
@@ -69,7 +68,7 @@ const about = {
     intro: {
         display: true,
         title: 'Introduction',
-        description: <>Selene is a Jakarta-based design engineer with a passion for transforming complex challenges into simple, elegant design solutions. Her work spans digital interfaces, interactive experiences, and the convergence of design and technology.</>
+        description: <>I've spent the last 8 years embedded in full cycle product design (from generative user research, to design systems engineering), and love every step. My experience spans from clinical health tech, wearables, consumer wellness products and internal tooling with complex workflows.</>
     },
     work: {
         display: true, // set to false to hide this section
@@ -105,7 +104,7 @@ const about = {
         ]
     },
     studies: {
-        display: true, // set to false to hide this section
+        display: false, // set to false to hide this section
         title: 'Studies',
         institutions: [
             {
@@ -124,7 +123,7 @@ const about = {
         skills: [
             {
                 title: 'Figma',
-                description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+                description: <>High level of competency and comfort with design and prototyping- 5 years of experience</>,
                 images: [
                     {
                         src: '/images/projects/project-01/cover-02.jpg',
@@ -166,7 +165,7 @@ const blog = {
 
 const work = {
     label: 'Work',
-    title: 'My projects',
+    title: 'Work Examples',
     description: `Design and dev projects by ${person.name}`
     // Create new project pages by adding a new .mdx file to app/blog/posts
     // All projects will be listed on the /home and /work routes
