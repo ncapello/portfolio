@@ -32,7 +32,7 @@ export async function generateMetadata(
 			title: `${person.firstName}'s Portfolio`,
 			description: 'Portfolio website showcasing my work.',
 			url: baseURL,
-			siteName: `${person.firstName}'s Portfolio`,
+			siteName: `${person.firstName}`,
 			locale: 'en_US',
 			type: 'website',
 		},
