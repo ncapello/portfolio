@@ -83,7 +83,14 @@ export default function Home(
 						fillWidth maxWidth="s" gap="m">
 						<RevealFx translateY="4">
 							<Heading
-								wrap="balance"
+								wrap="pretty"
+								style={{
+                                    maxWidth: '100%',
+                                    overflowWrap: 'break-word',
+                                    wordBreak: 'keep-all',
+                                    marginRight: 'var(--space-8)', // Add some right margin
+                                    lineHeight: '1.2', // Adjust line height
+                                }}
 								variant="display-strong-l">
 								{home.headline}
 							</Heading>
